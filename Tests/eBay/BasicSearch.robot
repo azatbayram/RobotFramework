@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation  Basic Search Functionality
-Library  SeleniumLibrary
+Resource  ../../Resources/CommonFunctionality.robot
+Resource  ../../Resources/eBayUserDefinedKeywords.robot
 
 *** Variables ***
 
@@ -11,17 +12,7 @@ Verify basic search functionality for eBay
 
   Start TestCase
   Verify Search Results
+  Filter Results by Condition
+  Verify Filter Results
   Finish TestCase
 
-*** Keywords ***
-Start TestCase
-  Open Browser  https://www.ebay.com/  chrome
-  Maximize Browser Window
-
-Verify Search Results
-  Input Text  //*[@id="gh-ac"]  mobile
-  Press Keys  //*[@id="gh-btn"]  Return
-  Page Should Contain  results for mobile
-
-Finish TestCase
-  Close Browser
