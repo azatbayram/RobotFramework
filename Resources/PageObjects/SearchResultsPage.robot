@@ -8,6 +8,7 @@ ${search_result}  results for
 
 *** Keywords ***
 Verify Search Results
+  [Arguments]  ${search_text}
   #Page Should Contain  ${search_result} ${search_text}[0]
-  #Page Should Contain  ${search_result} ${search_text}
-  Page Should Contain  ${search_result} ${search_text.first}
+  Page Should Contain  ${search_result} ${search_text}
+  #Page Should Contain  ${search_result} ${search_text.first}
