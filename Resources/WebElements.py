@@ -1,4 +1,4 @@
 #Home Page Locators
-SearchTextBox="//*[@id='gh-ac']"
-SearchButton="//*[@id='gh-btn']"
-AdvancedSearchLink="//*[@id='gh-as-a']"
+HomePageSearchTextBox="//*[@id='gh-ac']"
+HomePageSearchButton="//*[@id='gh-btn']"
+HomePageAdvancedSearchLink="//*[@id='gh-as-a']"
