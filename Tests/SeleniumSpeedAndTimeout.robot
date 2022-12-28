@@ -1,13 +1,13 @@
 *** Settings ***
 Library  SeleniumLibrary
-
+# we can enter Selenium timeout from here "Library  SeleniumLibrary  timeout=10s"
 *** Variables ***
 ${URL}  http://practice.cybertekschool.com/hovers
 ${browser}  chrome
 
 *** Test Cases ***
-Test Case to demostrate Mouse Operation Keywords in Robot Framework
-  [Documentation]   Test Case to demostrate Mouse Operation Keywords in Robot Framework
+Test Case to demostrate Selenium Speed and Timeout in Robot Framework
+  [Documentation]   Test Case to demostrate Selenium Speed and Timeout in Robot Framework
 #Selenium Speed is duration between each Selenim commands
 #Selenium Timeout is duration that selenium wait for each Selenium commands
   Open Browser  ${URL}  ${browser}
