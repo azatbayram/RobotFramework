@@ -20,4 +20,5 @@ Invalid Login Scenarios
   Input Text  ${txtbox_username}  ${username}
   Input Text  ${txtbox_password}  ${password}
   Click Button  ${btn_login}
+  Sleep  2s
   Element Should Contain  ${txt_error}  ${error_msg}
